@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "Weather",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar":{
+    "selectedColor": "#d81e06",
+    "list":[
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "assets/smile.png",
+        "selectedIconPath": "assets/smile_active.png",
+        "text": "smile"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "iconPath": "assets/log.png",
+        "selectedIconPath": "assets/log_active.png",
+        "text": "log"
+      }
+    ]
+  },
+  "style": "v2",
+  "permission": {
+    "scope.userLocation":{
+      "desc": "获取地理位置"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

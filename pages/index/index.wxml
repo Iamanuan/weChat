@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class="container">
+  <view bindtap="bindViewTap" class="userinfo">
+    <open-data type="userAvatarUrl" class="userinfo-avatar" mode="cover"></open-data>
+    <text class="userinfo-nickname">Hi, 点我了解今天的天气</text>
+  </view>
+  <view wx:if="{{weather.location}}" class="weather">
+    <text class="city">{{weather.location.name}}</text>
+    <text class="condition">{{weather.now.text}}</text>
+    <text class="temp">{{weather.now.temperature}} ℃</text>
+
+    <text class="other">—— 每天都是一个新的日子</text>
+  </view>
+  <block class="usermotto" wx:else>
+      <text class="user-motto">{{motto}}</text>
+  </block>
+</view>

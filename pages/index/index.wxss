@@ -1,0 +1,49 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  position: relative;
+  
+}
+.user-motto{
+  position: fixed;
+  bottom: 30px;
+}
+
+.weather{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  
+}
+
+.city, .condition, .temp{
+  width: 100%;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.other{
+  width: 100%;
+  margin-top: 30px;
+  color: green;
+  font-size: 18px;
+}
+
